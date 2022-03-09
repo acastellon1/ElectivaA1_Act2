@@ -15,7 +15,7 @@
 }
 
 .titulo1{
-    font-size: 40px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: darkcyan;
     font-style: italic;
@@ -27,6 +27,7 @@
 
 .header{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
     grid-area: header;
     border: 10px solid black;
     background-color: dimgray;
@@ -34,33 +35,54 @@
 }
 
     #imagen-intro{
-        width: 600px;
-        height: 300px;
+        flex: 1;
+        /*background-color: aquamarine;*/
+        width: 300px;
+        height: 150px;
+    }
+
+    .titulo{
+        flex: 4;
+        text-align: center;
+        /*background-color: lightgreen; */
+
     }
 
 
 .nav{
     grid-area: nav;
-    border: 5px solid black;
-    margin-top: 10px;
-    padding-top: 10px;    
+    border: 5px solid black;  
 }
 
-    .listasOpciones{
-        
-        color: black;
-        
-    }
+  ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+  }  
 
-    .opciones{
-        display: inline-block;
-        text-align: center;
-    }
+  li{
+      float: left;
+  }
 
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  
 
 a:link{
     color: black;
     text-decoration: none;
+}
+
+li a:hover{
+    background-color: lightblue;
 }
 
 a:visited{
@@ -70,11 +92,33 @@ a:visited{
 
 .section{
     grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+    article{
+        margin-top: 40px;
+    }
+
+    .imagen-article{
+        width: 400px;
+        height: 180px;
+    }
 
 .aside{
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+    .link-aside{
+
+        padding: 20px;
+    }
 
 .footer{
     grid-area: footer   ;
