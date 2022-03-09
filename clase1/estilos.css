@@ -46,7 +46,12 @@
     padding-top: 10px;    
 }
 
-  
+    .listasOpciones{
+        
+        color: black;
+        
+    }
+
     .opciones{
         display: inline-block;
         text-align: center;
