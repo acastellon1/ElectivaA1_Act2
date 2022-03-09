@@ -48,7 +48,7 @@
 
     .listasOpciones{
         
-        color: yellow;
+        color: black;
         
     }
 
@@ -59,7 +59,7 @@
 
 
 a:link{
-    color: yellow;
+    color: black;
     text-decoration: none;
 }
 
