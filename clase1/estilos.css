@@ -1,5 +1,5 @@
 *{
-    margin: opx;
+    margin: 0px;
 }
 
 .content{
@@ -10,83 +10,64 @@
     "nav            nav             nav             nav             nav"
     "section        section         section         section         aside"
     "footer         footer          footer          footer          footer ";
-
     height: 100vh;
-}
-
-.titulo1{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkcyan;
-    font-style: italic;
-    line-height: 20px;
-    text-align: center;
-    
 }
 
 
 .header{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
     grid-area: header;
-    border: 10px solid black;
+    display: flex;
+    border: 5px solid black;
     background-color: dimgray;
-    padding: 10px;
+    padding: 40px;
 }
 
     #imagen-intro{
         flex: 1;
         /*background-color: aquamarine;*/
-        width: 300px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
     }
 
     .titulo{
         flex: 4;
-        text-align: center;
-        /*background-color: lightgreen; */
+        text-align: center;                                      
+        /*background-color: brown;*/
 
     }
-
 
 .nav{
     grid-area: nav;
     border: 5px solid black;  
 }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+  
+    li{
+        float: left;
+    }
 
-  ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgb(255, 255, 255);
-  }  
-
-  li{
-      float: left;
-  }
-
-  li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
   
-
-a:link{
-    color: black;
-    text-decoration: none;
-}
 
 li a:hover{
     background-color: lightblue;
 }
 
 a:visited{
-    color: teal;
+    color:darkcyan;
     text-decoration: none;
 }
 
@@ -94,16 +75,17 @@ a:visited{
     grid-area: section;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
     article{
-        margin-top: 40px;
+        margin-top: 20px;
+
     }
 
     .imagen-article{
-        width: 400px;
-        height: 180px;
+        width: 100px;
+        height: 50px;
     }
 
 .aside{
